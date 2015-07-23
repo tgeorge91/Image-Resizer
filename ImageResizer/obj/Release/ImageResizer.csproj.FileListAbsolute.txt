@@ -14,3 +14,4 @@ C:\Users\Tim\Documents\GitHub\Image-Resizer\ImageResizer\bin\Release\ImageResize
 C:\Users\Tim\Documents\GitHub\Image-Resizer\ImageResizer\obj\Release\ImageResizer.Form1.resources
 C:\Users\Tim\Documents\GitHub\Image-Resizer\ImageResizer\obj\Release\ImageResizer.Properties.Resources.resources
 C:\Users\Tim\Documents\GitHub\Image-Resizer\ImageResizer\obj\Release\ImageResizer.csproj.GenerateResource.Cache
+C:\Users\Tim\Documents\GitHub\Image-Resizer\ImageResizer\obj\Release\ImageResizer.csprojResolveAssemblyReference.cache

@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("ImageResizer")]
 [assembly: AssemblyDescription("Made by Timothy George http://stfutimothy.com")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("https://github.com/tgeorge91/Image-Resizer")]
 [assembly: AssemblyProduct("ImageResizer")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
