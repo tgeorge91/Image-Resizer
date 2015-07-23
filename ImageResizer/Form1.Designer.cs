@@ -87,7 +87,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(199, 21);
+            this.label1.Location = new System.Drawing.Point(199, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 3;
@@ -96,7 +96,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(199, 44);
+            this.label2.Location = new System.Drawing.Point(199, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 4;
@@ -104,14 +104,14 @@
             // 
             // txtHeight
             // 
-            this.txtHeight.Location = new System.Drawing.Point(268, 14);
+            this.txtHeight.Location = new System.Drawing.Point(268, 34);
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(100, 20);
             this.txtHeight.TabIndex = 5;
             // 
             // txtWidth
             // 
-            this.txtWidth.Location = new System.Drawing.Point(268, 41);
+            this.txtWidth.Location = new System.Drawing.Point(268, 9);
             this.txtWidth.Name = "txtWidth";
             this.txtWidth.Size = new System.Drawing.Size(100, 20);
             this.txtWidth.TabIndex = 6;
@@ -119,7 +119,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(199, 77);
+            this.label3.Location = new System.Drawing.Point(199, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 13);
             this.label3.TabIndex = 7;
@@ -132,7 +132,7 @@
             this.txtMeasurment.Items.AddRange(new object[] {
             "Pixels",
             "Percent"});
-            this.txtMeasurment.Location = new System.Drawing.Point(279, 74);
+            this.txtMeasurment.Location = new System.Drawing.Point(279, 71);
             this.txtMeasurment.Name = "txtMeasurment";
             this.txtMeasurment.Size = new System.Drawing.Size(89, 21);
             this.txtMeasurment.TabIndex = 8;
@@ -160,7 +160,7 @@
             // chkOverwrite
             // 
             this.chkOverwrite.AutoSize = true;
-            this.chkOverwrite.Location = new System.Drawing.Point(235, 117);
+            this.chkOverwrite.Location = new System.Drawing.Point(237, 115);
             this.chkOverwrite.Name = "chkOverwrite";
             this.chkOverwrite.Size = new System.Drawing.Size(95, 17);
             this.chkOverwrite.TabIndex = 11;
@@ -189,7 +189,7 @@
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(87, 140);
+            this.progressBar.Location = new System.Drawing.Point(86, 138);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(226, 23);
             this.progressBar.TabIndex = 1;

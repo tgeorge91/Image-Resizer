@@ -142,7 +142,7 @@ namespace ImageResizer
         private int GetWidth(Img img)
         {
             int width;
-            var isPixels = txtMeasurment.SelectedText == "Pixels";
+            var isPixels = txtMeasurment.SelectedIndex == 0;
             if (isPixels)
             {
                 width = Int32.Parse(txtWidth.Text);
@@ -158,7 +158,7 @@ namespace ImageResizer
         private int GetHeight(Img img)
         {
             int height;
-            var isPixels = txtMeasurment.SelectedText == "Pixels";
+            var isPixels = txtMeasurment.SelectedIndex == 0;
             if (isPixels)
             {
                 height = Int32.Parse(txtHeight.Text);
