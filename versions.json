@@ -1,3 +1,7 @@
 {
-    "currentVersion": "1.0.0"
+    "currentVersion": "1.0.2",
+    "changeLog": [
+        {"1.0.2": "Updated tab indexes and started drag n drop"},
+        {"1.0.0": "Created Image Resizer"}
+    ]
 }
