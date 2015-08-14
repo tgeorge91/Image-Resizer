@@ -107,14 +107,14 @@
             this.txtHeight.Location = new System.Drawing.Point(268, 34);
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(100, 20);
-            this.txtHeight.TabIndex = 5;
+            this.txtHeight.TabIndex = 6;
             // 
             // txtWidth
             // 
             this.txtWidth.Location = new System.Drawing.Point(268, 9);
             this.txtWidth.Name = "txtWidth";
             this.txtWidth.Size = new System.Drawing.Size(100, 20);
-            this.txtWidth.TabIndex = 6;
+            this.txtWidth.TabIndex = 5;
             // 
             // label3
             // 
@@ -142,7 +142,7 @@
             this.btnResize.Location = new System.Drawing.Point(210, 211);
             this.btnResize.Name = "btnResize";
             this.btnResize.Size = new System.Drawing.Size(156, 23);
-            this.btnResize.TabIndex = 9;
+            this.btnResize.TabIndex = 11;
             this.btnResize.Text = "Resize";
             this.btnResize.UseVisualStyleBackColor = true;
             this.btnResize.Click += new System.EventHandler(this.btnResize_Click);
@@ -163,7 +163,7 @@
             this.chkOverwrite.Location = new System.Drawing.Point(237, 115);
             this.chkOverwrite.Name = "chkOverwrite";
             this.chkOverwrite.Size = new System.Drawing.Size(95, 17);
-            this.chkOverwrite.TabIndex = 11;
+            this.chkOverwrite.TabIndex = 9;
             this.chkOverwrite.Text = "Overwrite Files";
             this.chkOverwrite.UseVisualStyleBackColor = true;
             // 
