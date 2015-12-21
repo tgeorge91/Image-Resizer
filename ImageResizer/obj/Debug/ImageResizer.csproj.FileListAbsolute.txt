@@ -21,7 +21,6 @@ C:\Users\Tim\Documents\GitHub\Image-Resizer\ImageResizer\obj\Debug\ImageResizer.
 C:\Users\Tim\Documents\GitHub\Image-Resizer\ImageResizer\obj\Debug\ImageResizer.pdb
 C:\Users\Tim\Documents\GitHub\Image-Resizer\ImageResizer\bin\Debug\ImageResizer.exe
 C:\Users\Tim\Documents\GitHub\Image-Resizer\ImageResizer\bin\Debug\ImageResizer.pdb
-C:\Users\Tim\Documents\GitHub\Image-Resizer\ImageResizer\obj\Debug\ImageResizer.csprojResolveAssemblyReference.cache
 C:\Users\Tim\Documents\GitHub\Image-Resizer\ImageResizer\obj\Debug\ImageResizer.Form1.resources
 C:\Users\Tim\Documents\GitHub\Image-Resizer\ImageResizer\obj\Debug\ImageResizer.Properties.Resources.resources
 C:\Users\Tim\Documents\GitHub\Image-Resizer\ImageResizer\obj\Debug\ImageResizer.csproj.GenerateResource.Cache

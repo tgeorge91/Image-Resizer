@@ -35,7 +35,29 @@ namespace ImageResizer
         void Form1_DragDrop(object sender, DragEventArgs e)
         {
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-            foreach (string file in files) Console.WriteLine(file);
+            AddFiles(files);
+        }
+
+        private void AddFiles(string[] files)
+        {
+            ShowProgressBar(true, files.Count());
+            foreach (var file in files)
+            {
+                UpdateProgressBar();
+                var path = file;
+                var fileName = System.IO.Path.GetFileName(path);
+                var extention = Path.GetExtension(path);
+
+                using (var image = Image.FromFile(file))
+                {
+                    var img = new Img { FullPath = file, FileName = fileName, Width = image.Width, Height = image.Height, FileExtention = extention };
+                    AllImages.Add(img);
+                }
+            }
+
+            ShowProgressBar(false);
+
+            RepopulateListBox();
         }
 
         private void btnAddFiles_Click(object sender, EventArgs e)
@@ -44,25 +66,7 @@ namespace ImageResizer
             if (result == DialogResult.OK) 
             {
                 var files = openFileDialog1.FileNames;
-                ShowProgressBar(true, files.Count());
-
-                foreach (var file in files)
-                {
-                    UpdateProgressBar();
-                    var path = file;
-                    var fileName = System.IO.Path.GetFileName(path);
-                    var extention = Path.GetExtension(path);
-
-                    using (var image = Image.FromFile(file))
-                    {
-                        var img = new Img { FullPath = file, FileName = fileName, Width = image.Width, Height = image.Height, FileExtention = extention };
-                        AllImages.Add(img);
-                    }
-                }
-
-                ShowProgressBar(false);
-
-                RepopulateListBox();
+                AddFiles(files);
             }
         }
 
