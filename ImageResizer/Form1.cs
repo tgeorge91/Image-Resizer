@@ -273,13 +273,15 @@ namespace ImageResizer
             SetFolderLocation("Compressed");
             ShowProgressBar(true, AllImages.Count());
 
+            using (var webClient = new WebClient())
             using (var client = new TinyPngClient(tinyPngApiKey))
             {
                 foreach (Img file in AllImages)
                 {
                     UpdateProgressBar();
                     var newFileLocation = GetNewFileLocation(file);
-                    await client.Compress(file.FullPath).Resize(file.Width, file.Height).SaveImageToDisk(newFileLocation);
+                    var result = await client.Compress(file.FullPath);
+                    webClient.DownloadFile(result.Output.Url, newFileLocation);
                 }
             }
 
