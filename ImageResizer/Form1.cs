@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Drawing.Imaging;
 using System.Drawing.Drawing2D;
 using System.Diagnostics;
+using System.Configuration;
+using TinyPng;
+using System.Net;
 
 namespace ImageResizer
 {
     public partial class Form1 : Form
     {
         public List<Img> AllImages = new List<Img>();
-        string FolderLocation;
+        public string FolderLocation;
+        public string tinyPngApiKey;
 
         public Form1()
         {
@@ -155,6 +155,11 @@ namespace ImageResizer
         private void Form1_Load(object sender, EventArgs e)
         {
             txtMeasurment.SelectedIndex = 0;
+            tinyPngApiKey = ConfigurationManager.AppSettings["TinyPNGApiKey"];
+            if (string.IsNullOrEmpty(tinyPngApiKey))
+            {
+                btnCompress.Visible = false;
+            }
         }
 
         private int GetWidth(Img img)
@@ -263,23 +268,19 @@ namespace ImageResizer
                 progressBar.Value = 0;
         }
 
-        private void btnCompress_Click(object sender, EventArgs e)
+        private async void btnCompress_Click(object sender, EventArgs e)
         {
             SetFolderLocation("Compressed");
             ShowProgressBar(true, AllImages.Count());
 
-            foreach (Img file in AllImages)
+            using (var client = new TinyPngClient(tinyPngApiKey))
             {
-                UpdateProgressBar();
-                var image = Image.FromFile(file.FullPath);
-                var width = image.Width;
-                var height = image.Height;
-                var newImage = ResizeImage(image, width, height);
-                var newFileLocation = GetNewFileLocation(file);
-                var extention = GetExtention(file.FileExtention);
-                image.Dispose();
-
-                newImage.Save(newFileLocation, extention);
+                foreach (Img file in AllImages)
+                {
+                    UpdateProgressBar();
+                    var newFileLocation = GetNewFileLocation(file);
+                    await client.Compress(file.FullPath).Resize(file.Width, file.Height).SaveImageToDisk(newFileLocation);
+                }
             }
 
             ShowProgressBar(false);
