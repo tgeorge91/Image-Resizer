@@ -1,43 +1,70 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Folder config file
-Desktop.ini
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+/*/[Dd]ebug/
+/*/[Dd]ebugPublic/
+/*/[Rr]elease/
+/*/[Rr]eleases/
+/*/x64/
+/*/x86/
+/*/build/
+/*/bld/
+/*/[Bb]in/
+/*/[Oo]bj/
 
-# Windows shortcuts
-*.lnk
 
-# =========================
-# Operating System Files
-# =========================
+# Visual Studio 2015 cache/options directory
+.vs/
 
-# OSX
-# =========================
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
 
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
+packages/
